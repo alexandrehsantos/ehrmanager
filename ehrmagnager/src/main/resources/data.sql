@@ -1,0 +1,1 @@
+INSERT INTO ENVIRONMENT (ID, USER_NAME, PASSWORD, TENANTY_ID) VALUES (1,'admin', 'admin', 'default');

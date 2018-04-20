@@ -1,0 +1,33 @@
+<!DOCTYPE HTML>
+<html xmlns:th="http://www.thymeleaf.org">
+<head>
+<title>Welcome to our multi-tenant employees app</title>
+<meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
+<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.5/css/bootstrap.min.css" />
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.3/jquery.min.js"></script>
+<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.5/js/bootstrap.min.js"></script>
+</head>
+<body>
+	<div class="container">
+		<h1>A um passo de facilitar seu trabalho com recursos humanos</h1>
+		<div class="row">
+			<form action="#" th:action="@{/logon}" th:object="${signInVO}" method="post">
+				<p>
+					Seu login para entrar na plataforma:
+				</p>
+				<p>
+					Seu E-mail: <input type="text" th:field="*{userName}" />
+				</p>
+				<p>
+					E sua Senha: <input type="password" th:field="*{password}" />
+				</p>
+				<p>
+					<input type="submit" value="Começar a utilizar o sistema" /> <input type="reset"
+						value="Cancelar" />
+				</p>
+			</form>
+
+		</div>
+	</div>
+</body>
+</html>
